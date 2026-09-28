@@ -17,4 +17,4 @@ Mini Budget is a simple command-line app I built to track personal finances. It 
 ## How to Set Up and Run
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)abhigyanom2007/Mini_Budget_Management_Cli_Program.git
+      git clone [https://github.com/johndoe/mini-budget-cli.git](https://github.com/abhigyanom2007/Mini_Budget_Management_Cli_Program.git)
