@@ -1,27 +1,18 @@
-import sys, math, time
-
-def calc_bal(lst):
+def calculate_balance(data):
+    """Iterates through data to calculate and display the net balance."""
     print("\n Financial Summary ")
-    ti = 0.0
-    te = 0.0
+    total_income = 0.0
+    total_expense = 0.0
 
-    flag = True
-    while flag == True:
-        # for i in range(len(lst)):
-        #     if lst[i] == "Income":
-        
-        for r in lst:
-            if r["type"] == "Income":
-                ti = ti + r["amount"]
-            if r["type"] == "Expense":
-                te = te + r["amount"]
+    for record in data:
+        if record["type"] == "Income":
+            total_income += record["amount"]
+        elif record["type"] == "Expense":
+            total_expense += record["amount"]
 
-        nb = ti - te
+    net_balance = total_income - total_expense
 
-        # print("Net Balance: " + nb) 
-        print(f"Total Income:  {ti}")
-        print(f"Total Expense:  {te}")
-        print(" ")
-        print(f"Net Balance:  {nb}")
-        
-        flag = False
+    print(f"Total Income:  {total_income}")
+    print(f"Total Expense:  {total_expense}")
+    print(" ")
+    print(f"Net Balance:  {net_balance}")
